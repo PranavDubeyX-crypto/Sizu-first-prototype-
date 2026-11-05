@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIZU AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">SIZU<span>_AI</span></div>
+      <div class="status"><i id="statusDot"></i><span id="statusText">ONLINE</span></div>
+    </header>
+
+    <section class="character-area">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+
+      <div id="sizu" class="sizu">
+        <div class="antenna"></div>
+        <div class="ear ear-left"></div>
+        <div class="ear ear-right"></div>
+        <div class="head">
+          <div class="eye eye-left"></div>
+          <div class="eye eye-right"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="body">
+          <div class="chest-light"></div>
+        </div>
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+      </div>
+
+      <div id="emotionLabel">CURIOUS</div>
+      <p id="characterMessage">Hello! I'm SIZU.</p>
+    </section>
+
+    <section class="chat-area">
+      <div id="chatMessages" class="messages">
+        <div class="message bot">
+          <b>SIZU</b>
+          <p>Hey! I'm SIZU. Ask me anything about the universe or just talk to me!</p>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <button id="micButton" title="Speak">🎙</button>
+        <input id="userInput" type="text" placeholder="Talk to SIZU..." autocomplete="off">
+        <button id="sendButton">➤</button>
+      </div>
+      <p class="hint" id="hint">Tap the microphone and start speaking.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
